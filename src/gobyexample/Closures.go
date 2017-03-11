@@ -2,8 +2,10 @@ package main
 
 import "fmt"
 
-func intSeq() func() int {
+func intSeq() func() int { // 返回一个函数
+
 	i := 0
+
 	return func() int {
 		i += 1
 		return i
@@ -18,5 +20,6 @@ func main() {
 	fmt.Println(nextInt())
 
 	newInts := intSeq()
+
 	fmt.Println(newInts())
 }
