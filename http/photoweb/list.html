@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>List</title>
+</head>
+<body>
+<ol>
+    <!--.即表示该循环体中的当前元素-->
+    <!--.|formatter表示对当前这个元素的值以formatter方式进行格式化输出-->
+{{range $.images}}
+        <!--即表示对当前元素的值进行转换以适合作为URL一部
+分 -->
+    <li><a href="/view?id={{.|urlquery}}">{{.|html}}</a></li>
+{{end}}
+</ol>
+</body>
+</html>

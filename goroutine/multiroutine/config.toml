@@ -1,0 +1,8 @@
+source="test1"
+destination="./report/"
+channelsize=10000000
+goroutinenum=11
+logfile="./log"
+# 1表示被处理文件中的行为IP_IDFA格式
+# 2表示被处理文件中的行为IP格式
+# 3表示被处理文件中的行为IDFA格式
